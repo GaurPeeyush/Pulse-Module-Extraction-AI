@@ -1,0 +1,730 @@
+[
+    {
+        "module": "Welcome to Zluri",
+        "Description": "Companies face challenges in managing their SaaS environments due to issues like Shadow IT and Access sprawl. Zluri addresses these challenges by unifying SaaS, access, cost, and risk management under one roof. It provides visibility and control over the SaaS stack, helps manage Shadow IT, optimizes costs, and offers centralized access management with self-service access requests and automated access reviews.",
+        "Submodules": {
+            "Visibility and Control": "Zluri visualizes all aspects of a company's SaaS stack, enabling effective monitoring of user access and spending.",
+            "Shadow IT Management": "Helps identify unauthorized applications used within the organization to mitigate associated risks.",
+            "Cost Optimization": "Provides insights into SaaS spending to help optimize costs and achieve ROI from day one.",
+            "Centralized Access Management": "Defines access policies, automates user lifecycles, and ensures visibility and control over access.",
+            "Self-service Access Requests": "Policy-driven workflows for auto-provisioning application access with Slack automation to unburden IT.",
+            "Automated Access Reviews": "Auto remediates over-privileged access and accelerates compliance with audit-ready reports."
+        }
+    },
+    {
+        "module": "ReadMe",
+        "Description": "Output the module in the following JSON format",
+        "Submodules": {
+            "Submodule 1": "Detailed description of submodule 1",
+            "Submodule 2": "Detailed description of submodule 2"
+        }
+    },
+    {
+        "module": "Application Management Overview",
+        "Description": "Discover, track, and manage all SaaS applications in your organization. Zluri's Application Management module enables IT and security teams to identify and control shadow IT through a categorization and review system.",
+        "Submodules": {
+            "Visibility": "Comprehensive App Tracking: Monitors applications in the environment. Spend Visibility: Shows exact spending for each application. Usage Analytics: Tracks active user counts vs. licensed users, helps identify over/under-licensed situations, and shows user engagement levels across apps.",
+            "Discovery": "Multiple Sources Integration: Shows various integration sources, integrates with SSO, financial systems, and direct app connections. Ownership Tracking: Maps application owners, helps in accountability and governance. Application Categorization: Managed, Restricted, and Unmanaged.",
+            "Shadow IT Management": "Risk Identification: Flags applications that need review, identifies unmanaged applications. Application Status Tracking: Verified apps marked with checkmarks, clear distinction between approved and unapproved apps. Governance Features: Ability to mark applications as restricted, tools for managing application access and compliance, options to convert unmanaged apps into managed ones."
+        }
+    },
+    {
+        "module": "User Management Overview",
+        "Description": "Oversee user information, application usage, and departmental assignments. This module consists of all user-based organizational data, including users marked for onboarding and offboarding. It provides a comprehensive set of views through which useful information can be viewed as well as providing the ability to export all user data externally through .csv format.",
+        "Submodules": {
+            "User Overview": "Displays detailed information about a user including actively used apps, average monthly spend, monthly cost, total apps, average usage, status, designation, department, added on date, onboarding date, app-wise spend, and app-wise usage.",
+            "User Applications": "Lists the applications used by the user along with usage, spend[YTD], cost[YTD], license, user application status, risk level, last used date, specified SSO source, and application status. Allows for bulk editing of applications for a user.",
+            "Edit User Details": "This submodule allows users to edit their details by clicking on the 'Edit' button, making changes, and then clicking on the 'Edit user' button to update the details.",
+            "Bulk Update Data": "This submodule enables users to bulk update metadata of each entity by uploading a CSV file. Users can select fields to update, download an editable CSV, update the file with new data, and upload it. Notifications are sent via email upon completion of the upload process."
+        }
+    },
+    {
+        "module": "Transactions Overview",
+        "Description": "Transactions Overview provides a comprehensive view of transactions in Zluri. It displays transactional data from financial integrations or uploaded CSV files. Zluri supports integrations with various platforms such as Intuit Quickbooks, Zoho Books, Zoho Expense, Expensify, Netsuite, and more. Users can access the list of supported financial integrations by navigating to Sources -> Integrations -> Browse Catalog on the Zluri Home page.",
+        "Submodules": {
+            "Recognised Transactions": "This submodule displays transactions that Zluri has recognized from financial integrations and mapped to an application. The mapping is based on the Transaction Description matching the application name.",
+            "Unrecognised Transactions": "This submodule shows transactions that are not related to SaaS or have not been recognized by Zluri from financial integrations. These transactions are not mapped to any application.",
+            "Archived Transactions": "In this submodule, users can view non-SaaS related transactions or any transactions they choose to archive. Archived transactions are not visible on the dashboard.",
+            "Payment Methods": "Users can manage payment methods like Credit cards, Bank Accounts, and other Payment Options in this submodule. Zluri sends notifications when a payment method is nearing its expiry date.",
+            "Uploads": "This submodule allows users to upload transaction data as a CSV file. The data must be in a specific format for successful upload."
+        }
+    },
+    {
+        "module": "Onboarding Workflows",
+        "Description": "Create workflows to onboard new employees. Use onboarding workflows to automatically create user accounts for new employees, assign them license(s), and/or add them to groups for different applications when they join the organization.",
+        "Submodules": {
+            "Creating and running an onboarding workflow": "This submodule explains how to create and run an onboarding workflow. It involves selecting users to onboard, adding apps for account creation, exploring available actions, setting up mandatory actions, assigning phone numbers, using scheduling and approval options, and saving tasks.",
+            "Managing onboarding workflows": "This submodule provides an overview of managing onboarding workflows. It includes sections such as Overview, Drafts, Playbooks, Run Logs, and Scheduled Runs. Users can create new workflows, run existing playbooks, view in progress workflows, manage unsaved drafts, search, run, edit, or delete workflows, view run logs, archive runs, filter workflows, and manage scheduled runs."
+        }
+    },
+    {
+        "module": "Access Requests Overview",
+        "Description": "Zluri's Access Requests module, in conjunction with the Employee App Catalog, allows employees to request access to various applications and tools within an organization. It automates access management tasks, reducing the workload on IT teams. The module includes features such as automation rules, request submission, approval flow, admin actions, add/update approvers, role-based approvers, provisioning and deprovisioning, changelog tracking, approver’s dashboard, and access requests via Slack.",
+        "Submodules": {
+            "Automation rules": "Admins can set up automation rules for license approvals, specifying request types, defining approval workflows with conditions, setting actions for auto-approvals/rejections, assigning roles or individuals as approvers, and automating provisioning and deprovisioning tasks.",
+            "Raise a request": "Employees can request licenses or applications directly from Zluri’s dashboard or via Zluri's Slack bot.",
+            "Requests view": "View all requests and their statuses in one place, allowing employees to track or create requests.",
+            "Approval flow": "Access requests follow a sequential approval process, with admins having the ability to override approvals and rejections, update approvers, and receive notifications via email and Slack.",
+            "Admin Actions": "Admins can approve or reject requests on behalf of approvers, cancel requests with rejections, and allow further processing with overrides.",
+            "Add or update approvers": "Admins can manage approvers by adding, removing, replacing, or reordering them during the process, with notifications sent to all stakeholders.",
+            "Role-based approvers": "Assign approvers based on roles set in automation rules.",
+            "Provisioning and deprovisioning": "Admins can grant access through provisioning actions and revoke access after a set period with deprovisioning actions, track both actions, and configure deprovisioning rules for time-bound requests.",
+            "Changelog": "Tracks request updates like approval status, duration changes, and admin comments.",
+            "Approver’s dashboard": "Approvers can view and manage all pending requests from a central dashboard.",
+            "Access requests via Slack": "Zluri's Slack bot enables users to raise and approve access requests."
+        }
+    },
+    {
+        "module": "Access Reviews in Zluri",
+        "Description": "Access Reviews in Zluri is a critical process management module that enables InfoSec teams to ensure the accuracy, appropriateness, and alignment of user access across applications within an organization's tech stack with security and compliance policies. It provides centralized visibility into applications requiring review and offers detailed information necessary for efficient reviews. Users can manage multiple app reviews, assign reviewers, and implement post-review actions.",
+        "Submodules": {
+            "Access Review Roles and Due Dates": "This submodule defines roles such as Primary Reviewer, Fallback Reviewer, and Certification Owner, along with due dates for reviews including Review Start Date, Review End Date, and Remediation End Date.",
+            "Access Review Process": "This submodule guides users through creating certifications, selecting applications, specifying reviewers, reviewing certifications, and concluding reviews. It includes steps for creating a certification, reviewing ongoing certifications, and concluding the review process.",
+            "Notifications": "Automated notifications are sent to reviewers for pending reviews and upcoming deadlines.",
+            "Cloning Campaign": "Clone previous certifications to reuse configurations for similar reviews from Certification dashboard pages from Ongoing or Completed tabs.",
+            "Show progress by reviewers": "The certification owner can see the progress for each reviewer assigned to an access review campaign and send reminders to specific reviewers or all reviewers who have pending reviews to complete.",
+            "Employee View": "Employees (app users) can view and take action on certifications assigned to them as reviewers."
+        }
+    },
+    {
+        "module": "Integrations Overview",
+        "Description": "A walkthrough of Zluri's Integrations module. Zluri's Integrations module provides access to all the applications that can be connected to the platform. Currently, Zluri offers direct integrations with nearly 300 applications. Users can explore and manage integrations using sorting options, search bar, integration cards, and subsections.",
+        "Submodules": {
+            "Recommended": "View frequently used apps within the organization based on data from connected SSOs. These recommended integrations aim to improve efficiency.",
+            "Connected": "Check the list of apps already integrated with Zluri to have a quick overview of existing connections. Users can monitor connection requests, browse the catalog for new integrations, and connect specific integrations using detailed steps provided in the Integrations section."
+        }
+    },
+    {
+        "module": "Workflow Management in Zluri",
+        "Description": "Workflow Management in Zluri is a feature that enables IT administrators to automate SaaS operations. Zluri offers two types of workflows: Onboarding workflows and Offboarding workflows. Onboarding workflows allow users to perform actions such as adding a user, assigning licenses, and managing user groups when a new user joins the organization. Offboarding workflows facilitate actions like removing a user, revoking licenses, and managing user groups when a user leaves the organization. The module provides an Overview section for creating new workflows or utilizing existing playbooks.",
+        "Submodules": {
+            "Onboarding workflows": "Onboarding workflows in Zluri allow users to automate processes related to adding new users, assigning licenses, and managing user groups for different applications within the organization.",
+            "Offboarding workflows": "Offboarding workflows in Zluri enable users to automate processes for removing users, revoking licenses, and managing user groups for different applications when a user leaves the organization."
+        }
+    },
+    {
+        "module": "Zluri Settings Overview",
+        "Description": "Configure Zluri to your preferences by managing account settings and customizing various aspects using the Settings dashboard.",
+        "Submodules": {
+            "Account Settings": "Change personal details like name, email address, phone number, and profile picture. Enable two-factor authentication, reset password, and modify Payment owner and IT owner details.",
+            "Data Configuration": "Configure primary sources for fetching data, select primary sources for different data points, and manage trusted domains fetched from SSO integration.",
+            "App Catalog Management": "Configure the app catalog, including Authorization Levels, Application Metadata, branding, theming, and managing access to SaaS applications.",
+            "User Workspace Management": "View and manage workspace members, their permission levels, last login details, reset passwords, and add/remove administrators.",
+            "SSO Configuration": "Set up SAML/SSO methods for users in the organization.",
+            "Custom Fields": "Add custom fields to Applications, Users, Departments & Transactions to store additional information.",
+            "Data Exports": "View scheduled data exports and filter report types.",
+            "Custom Apps Management": "Manage custom applications added manually or identified via integrations.",
+            "Plan Upgrade": "Upgrade your plan by contacting Zluri through chat, mail, or phone.",
+            "Notification and Email Settings": "Change notification and email settings.",
+            "Global Workflows Customization": "Customize workflows globally for the organization."
+        }
+    },
+    {
+        "module": "Zluri Onboarding Process",
+        "Description": "A module focused on guiding users through the process of setting up Zluri efficiently. It includes steps for signing up, adding organization details, and integrating key services like SSO, accounting/finance software, and HRMS.",
+        "Submodules": {
+            "SSO (Single Sign-On)": "Connect your SSO provider to Zluri to centralize organization data, manage sign-in activities, and enhance security analysis. This integration is crucial for identifying shadow IT and optimizing expenses.",
+            "Accounting/finance software": "Integrate accounting software like Intuit Quickbooks, FreshBooks, or Brex to track expenses and transactions efficiently within Zluri. This submodule helps in financial management and reporting.",
+            "HRMS (Human Resource Management System)": "Connect your HRMS system to Zluri to track employee data such as departments, designations, reporting managers, and joining dates. This integration enhances HR data management and reporting capabilities."
+        }
+    },
+    {
+        "module": "Google Workspace Integration",
+        "Description": "Google Workspace Integration module enables seamless connection between Zluri and Google Workspace, allowing users to discover user accounts, monitor usage, analyze security, optimize spending, and automate workflows. Users can connect Google Workspace to Zluri using either a Super Admin Workspace account or a Custom Admin Role, providing flexibility and control over integration.",
+        "Submodules": {
+            "Zluri + Google Workspace": "Zluri integration with Google Workspace provides insights into user accounts, usage frequency, third-party app connections, security analysis, spending optimization, and workflow automation.",
+            "Integration": "The integration submodule outlines two main methods to connect Google Workspace to Zluri: using a Super Admin Workspace account for quick access to all features with minimal configuration, or using a Custom Admin Role for more control and security with delegated permissions."
+        }
+    },
+    {
+        "module": "Azure AD Integration",
+        "Description": "The Azure AD Integration module provides the capability to connect Azure AD (Active Directory) identity service with Zluri, enabling single sign-on, multi-factor authentication, and detailed security analysis of applications. It allows for discovering users with Azure AD accounts, managing third-party app connections, optimizing spendings, automating onboarding/offboarding workflows, and assigning users to specific groups/projects based on profiles.",
+        "Submodules": {
+            "Submodule 1": "Machine to machine (Recommended): This submodule offers a centralized control over application access, simplified access management, and security features like conditional access and role-based access control. It supports application permissions and is user-agnostic, making it easier to manage multiple applications and their permissions.",
+            "Submodule 2": "Using a custom admin account: This submodule allows delegating the integration to an Azure AD account without admin credentials. It requires more manual configuration but provides greater control over Zluri features. The delegated account possesses only the minimum permissions required for the integration to work, ensuring a more secure connection."
+        }
+    },
+    {
+        "module": "Zluri Integration SDK",
+        "Description": "Integrate custom applications using Zluri's integration SDK. Zluri offers around 300 direct API integrations to seamlessly connect your SaaS applications. The SDK allows you to integrate custom API endpoints with Zluri, supporting both SaaS and on-prem apps. It provides capabilities to handle transaction information and user information. The SDK includes error handling and logging mechanisms for managing and reporting errors during data transmission. There is no additional cost for using the SDK, but there is an API rate limit of 400 requests/min.",
+        "Submodules": {
+            "Capabilities": "Supports transaction information and user information data points. Future plans to add support for contract data.",
+            "Error Handling and Logging": "Comprehensive error-handling mechanisms for managing and reporting errors during data transmission. Supports monitoring and logging functionality to track sync information and failures."
+        }
+    },
+    {
+        "module": "Slack",
+        "Description": "Slack is a workplace messaging and collaboration tool that enhances team communication by organizing conversations into channels, enabling direct messages, file sharing, and integrations with over 2,600 apps. It supports voice and video calls, a robust search function, and centralizes communication to improve productivity.",
+        "Submodules": {
+            "Zluri + Slack": "Zluri lets you discover which users have Slack accounts, how frequently they use them, and optimize spendings based on this data. You can also create and automate onboarding and offboarding workflows for team members, and automatically assign users to specific groups depending on their profile.",
+            "Integration": "Connecting Slack to Zluri is quick and painless. Check out our step-by-step instructions. Problems connecting? Find solutions to most common integration issues in our troubleshooting document. Got questions? Feel free to submit a ticket or contact us directly."
+        }
+    },
+    {
+        "module": "Getting Started",
+        "Description": "This module provides guidance on how to begin using the Slack integration.",
+        "Submodules": {
+            "Submodule 1": "Setting up the Slack integration",
+            "Submodule 2": "Configuring notification settings"
+        }
+    },
+    {
+        "module": "Application Management",
+        "Description": "Application Management module focuses on managing applications within the system.",
+        "Submodules": {
+            "Application Installation": "This submodule allows users to install new applications into the system.",
+            "Application Configuration": "This submodule enables users to configure settings and preferences for installed applications."
+        }
+    },
+    {
+        "module": "User Management",
+        "Description": "User Management module allows administrators to manage user accounts and permissions within the system.",
+        "Submodules": {
+            "User Accounts Management": "This submodule enables administrators to create, update, and delete user accounts. It includes functionalities such as user profile management, password reset, and account deactivation.",
+            "Permissions Management": "This submodule focuses on assigning and managing permissions for different user roles. Administrators can define access levels, restrict certain actions, and control user privileges within the system."
+        }
+    },
+    {
+        "module": "Cost Management",
+        "Description": "Cost Management module helps in tracking and managing expenses related to various aspects of the business operations.",
+        "Submodules": {
+            "Expense Tracking": "This submodule allows users to record and monitor expenses incurred by the organization. It provides features for categorizing expenses, setting budgets, and generating reports for analysis.",
+            "Budget Management": "Budget Management submodule enables users to create, allocate, and track budgets for different projects or departments. It helps in ensuring that expenses are within the allocated budget limits and provides alerts for budget overruns."
+        }
+    },
+    {
+        "module": "Access Provisioning",
+        "Description": "Access Provisioning module facilitates the management of user access to resources within the system.",
+        "Submodules": {
+            "Submodule 1": "User Role Assignment: This submodule allows administrators to assign specific roles to users, defining their access levels and permissions.",
+            "Submodule 2": "Access Request Approval: This submodule enables users to request access to specific resources, which can be approved or denied by designated approvers."
+        }
+    },
+    {
+        "module": "Access Requests",
+        "Description": "This module focuses on managing access requests within the system.",
+        "Submodules": {
+            "Access Request Submission": "Allows users to submit requests for access to specific resources or functionalities.",
+            "Access Request Approval": "Enables designated approvers to review and approve/deny access requests submitted by users."
+        }
+    },
+    {
+        "module": "Access Reviews",
+        "Description": "Access Reviews module allows administrators to review and manage user access permissions within the system.",
+        "Submodules": {
+            "Review Workflow": "This submodule enables the creation and customization of access review workflows, defining the process for reviewing and approving user access rights.",
+            "Audit Trail": "The Audit Trail submodule tracks and logs all access review activities, providing a detailed history of changes made during the review process."
+        }
+    },
+    {
+        "module": "Integrations",
+        "Description": "The Integrations module allows users to connect external tools and services with the main platform to enhance functionality and streamline workflows.",
+        "Submodules": {
+            "Slack Integration": "The Slack Integration submodule enables users to integrate the platform with Slack, a popular team communication tool. This integration allows for real-time notifications, collaboration, and information sharing between the platform and Slack channels."
+        }
+    },
+    {
+        "module": "Workflows & Automations",
+        "Description": "Learn how to set up and run no-code workflow automations to streamline IT operations.",
+        "Submodules": {}
+    },
+    {
+        "module": "Settings",
+        "Description": "The Settings module provides users with the ability to configure and customize various options and preferences within the application.",
+        "Submodules": {
+            "General Settings": "This submodule allows users to set general preferences such as language, theme, notifications, and other global settings.",
+            "Security Settings": "This submodule enables users to manage security-related settings such as password requirements, two-factor authentication, and access controls."
+        }
+    },
+    {
+        "module": "Popular Resources",
+        "Description": "This module provides access to resources that are highly popular among users. These resources are frequently accessed and are considered valuable for users seeking information or assistance.",
+        "Submodules": {
+            "Submodule 1": "Resource Categories: This submodule categorizes popular resources into different categories such as documentation, tutorials, FAQs, and best practices. Users can easily navigate through these categories to find relevant information.",
+            "Submodule 2": "Resource Ratings: This submodule allows users to rate and provide feedback on the popular resources available. Users can share their experiences and help others in the community by recommending useful resources."
+        }
+    },
+    {
+        "module": "Recently Added",
+        "Description": "This module allows users to view the most recently added items or content within the system.",
+        "Submodules": {
+            "Submodule 1": "Sort by Date: Users can sort the recently added items based on the date they were added.",
+            "Submodule 2": "Filter by Category: Users can filter the recently added items by specific categories or tags."
+        }
+    },
+    {
+        "module": "Still have questions?",
+        "Description": "Our team is ready to assist you with any technical issues or questions. You can submit a ticket for support.",
+        "Submodules": {
+            "Onboarding": "This submodule provides guidance and assistance for new users to get started with the platform.",
+            "Google Workspace Integration": "This submodule focuses on the integration capabilities with Google Workspace to enhance collaboration and productivity.",
+            "Azure AD Integration": "This submodule describes the integration features with Azure Active Directory for seamless user management and authentication.",
+            "Onboarding Workflows": "This submodule outlines the predefined workflows and processes for efficient onboarding of new users.",
+            "Zluri Integration SDK": "This submodule details the software development kit for integrating Zluri with other applications and systems.",
+            "Slack Integration": "This submodule explains the integration functionalities with Slack for improved communication and workflow automation."
+        }
+    },
+    {
+        "module": "Workflow and Automations",
+        "Description": "This module focuses on setting up workflows and automations to streamline processes and improve efficiency.",
+        "Submodules": {
+            "Workflow Setup": "Workflow Setup submodule allows users to define and customize workflows according to their specific requirements. Users can create sequential steps, set conditions, and automate tasks within the defined workflow.",
+            "Automation Configuration": "Automation Configuration submodule enables users to automate repetitive tasks and actions within the system. Users can set triggers, define actions, and schedule automated processes to reduce manual intervention and enhance productivity."
+        }
+    },
+    {
+        "module": "Visibility",
+        "Description": "The Visibility module provides comprehensive tracking and monitoring capabilities for applications within the environment. It includes features such as monitoring application usage, tracking spending on applications, and analyzing user engagement levels.",
+        "Submodules": {
+            "Comprehensive App Tracking": "This submodule monitors applications in the environment, providing detailed insights into the usage and performance of each application.",
+            "Spend Visibility": "This submodule shows the exact spending for each application, allowing users to track expenses associated with different applications. For example, it can display specific spending amounts like $1.69M for Hibob HRIS.",
+            "Usage Analytics": "This submodule tracks active user counts compared to licensed users, helping to identify situations of over or under-licensing. It also provides insights into user engagement levels across different applications, enabling better optimization of resources."
+        }
+    },
+    {
+        "module": "Discovery",
+        "Description": "The Discovery module provides functionalities for integrating multiple sources, tracking ownership, and categorizing applications. It enables users to integrate with single sign-on (SSO), financial systems, and direct app connections. Additionally, it allows mapping application owners for accountability and governance purposes. Users can categorize applications as Managed, Restricted, or Unmanaged.",
+        "Submodules": {
+            "Multiple Sources Integration": "This submodule focuses on showing various integration sources such as SSO, financial systems, and direct app connections.",
+            "Ownership Tracking": "This submodule is responsible for mapping application owners, which helps in ensuring accountability and governance within the organization.",
+            "Application Categorization": "This submodule enables users to categorize applications into Managed, Restricted, or Unmanaged categories based on their requirements."
+        }
+    },
+    {
+        "module": "Shadow IT Management",
+        "Description": "This module provides functionalities for managing Shadow IT within an organization. It includes features for risk identification, application status tracking, and governance.",
+        "Submodules": {
+            "Risk Identification": "Flags applications that need review and identifies unmanaged applications for further assessment.",
+            "Application Status Tracking": "Allows for the verification of apps with checkmarks, providing a clear differentiation between approved and unapproved applications.",
+            "Governance Features": "Enables the marking of applications as restricted, provides tools for managing application access and compliance, and offers options to convert unmanaged apps into managed ones."
+        }
+    },
+    {
+        "module": "Bulk update application data",
+        "Description": "This module in Zluri allows users to modify data for one or multiple applications, including fields like App ID, owner, security review status, and more, by using custom CSV files. Users can select specific apps, choose the fields to modify, and download an editable CSV to make bulk updates.",
+        "Submodules": {
+            "Bulk Update Data": "This submodule enables users to modify application data by selecting specific fields to edit, choosing the applications to update, and downloading an editable CSV file for making bulk changes."
+        }
+    },
+    {
+        "module": "User Overview",
+        "Description": "The User Overview module provides a detailed view of individual users within the system. Clicking on a user loads their user page, displaying various details such as actively used apps, average monthly spend, monthly cost, total apps used, average usage, status, designation, department, added on date, onboarding date, app-wise spend, and app-wise usage. Users can also access additional operations by clicking on the three dots next to the user name.",
+        "Submodules": {
+            "Actively Used Apps": "This submodule displays the total number of apps used by the user in the current month and the change in the number of apps used compared to the previous month based on login data from the SSO source.",
+            "App-wise Details": "This submodule provides detailed insights into the user's app-wise spend and usage, including spends done on each application, average monthly spend for all apps combined, total spends aggregated for all apps, usage for each application, average monthly usage for all apps combined, total usage percentage for all apps, and app-wise usage percentage value."
+        }
+    },
+    {
+        "module": "User Applications",
+        "Description": "The User Applications module provides a list of applications used by the user along with details such as usage, spend[YTD], cost[YTD], license information, user application status, risk level, last used date sourced from SSO integration, specified SSO source, and application status. Users have the ability to select multiple applications and perform bulk editing operations. The bulk edit option allows users to archive or unarchive selected applications for the user.",
+        "Submodules": {
+            "Bulk Edit": "Allows users to select multiple applications and perform bulk editing operations such as archiving or unarchiving selected applications.",
+            "Application Details": "Provides detailed information about each application listed, including usage, spend[YTD], cost[YTD], license details, user application status, risk level, last used date, SSO source, and application status."
+        }
+    },
+    {
+        "module": "Add a New User",
+        "Description": "This module provides the functionality to add a new user to the system. Users can input various details such as username, email address, designation, status, department, profile image, reporting manager, personal email, and onboarding status for the new user.",
+        "Submodules": {
+            "Submodule 1": "Adding Mandate Details",
+            "Submodule 2": "Additional Fields Entry",
+            "Submodule 3": "User Type Selection"
+        }
+    },
+    {
+        "module": "Editing user attributes",
+        "Description": "This module allows users to edit user attributes either on the user landing page or the individual employee page. Users can select multiple users on the user landing page to change attributes such as user status, archive/unarchive, department, user type, etc. Changes made will apply to all selected users. Additionally, users can use the quick edit option to modify user designation by hovering over the designation value. On the individual user's page, users can click on the 'Edit' button to make changes in a popup window and update user details.",
+        "Submodules": {
+            "Bulk Edit on User Landing Page": "Users can select multiple users on the user landing page and change attributes like user status, archive/unarchive, department, user type, etc. Changes apply to all selected users.",
+            "Quick Edit on Individual User Page": "Users can quickly edit user designation by hovering over the designation value on the individual user's page. Changes can be made and saved instantly."
+        }
+    },
+    {
+        "module": "Bulk update data",
+        "Description": "Zluri provides the functionality to bulk update the metadata of existing entities by uploading a CSV file. Users can select specific fields to update, download an editable CSV template, input new data, and upload the file. Notifications are sent via email upon completion of the upload process. This feature is limited to updating data for existing entities and does not support creating new entities.",
+        "Submodules": {
+            "Users": "Allows users to update values for user entities by following the step-by-step process of bulk updating data.",
+            "Departments": "Enables users to update values for department entities using the same bulk update functionality as described in the module."
+        }
+    },
+    {
+        "module": "Creating and running an onboarding workflow",
+        "Description": "This module provides guidance on how to create and execute an onboarding workflow. It involves selecting users to onboard, adding specific apps for account creation, and managing the overall onboarding process.",
+        "Submodules": {
+            "Submodule 1": "Selecting Users to Onboard: This submodule focuses on the process of choosing the users who will go through the onboarding workflow.",
+            "Submodule 2": "Adding Apps for Account Creation: This submodule details the steps to add specific applications for which user accounts need to be created during the onboarding process."
+        }
+    },
+    {
+        "module": "❗️",
+        "Description": "This module provides functionality related to onboarding workflows.",
+        "Submodules": {
+            "Submodule 1": "Automated User Provisioning: This submodule enables the automatic creation of user accounts during the onboarding process.",
+            "Submodule 2": "Approval Workflows: This submodule allows defining approval processes for onboarding requests, ensuring proper authorization before onboarding new users."
+        }
+    },
+    {
+        "module": "Managing onboarding workflows",
+        "Description": "This module focuses on the management of onboarding workflows for new users. It provides tools and features to streamline the onboarding process and ensure a smooth transition for new employees.",
+        "Submodules": {
+            "Okta example": "The Okta example submodule demonstrates how onboarding workflows can be integrated with Okta for seamless user provisioning and access management.",
+            "Recommended apps and actions": "This submodule suggests apps and actions that can enhance the onboarding experience, such as recommended tools for new employees and specific actions to be taken during the onboarding process.",
+            "Overview": "The Overview submodule provides a high-level summary of the onboarding workflows, including key features, benefits, and best practices for efficient onboarding.",
+            "Drafts": "The Drafts submodule allows users to create and save draft versions of onboarding workflows before finalizing and deploying them for new employees.",
+            "Playbooks": "The Playbooks submodule offers pre-defined templates and guides for common onboarding scenarios, enabling quick setup and customization of workflows.",
+            "Run Logs": "The Run Logs submodule tracks and logs the execution of onboarding workflows, providing visibility into the status and outcomes of each onboarding process.",
+            "Scheduled Runs": "The Scheduled Runs submodule enables users to automate the execution of onboarding workflows at specified times, ensuring timely and consistent onboarding for new employees."
+        }
+    },
+    {
+        "module": "Automation rules",
+        "Description": "Admins can set up automation rules for license approvals with these five sections.",
+        "Submodules": {}
+    },
+    {
+        "module": "Raise a request",
+        "Description": "Employees can request licenses or applications directly from Zluri’s dashboard. Alternatively, they can use Zluri's Slack bot for access requests.",
+        "Submodules": {
+            "Direct Request via Dashboard": "Employees can request licenses or applications directly from Zluri’s dashboard.",
+            "Request via Slack Bot": "Employees can request licenses or applications using Zluri's Slack bot for access requests."
+        }
+    },
+    {
+        "module": "Requests view",
+        "Description": "View all requests and their statuses in one place. Employees can track or create requests.",
+        "Submodules": {}
+    },
+    {
+        "module": "Approval flow",
+        "Description": "Access requests follow a sequential approval process. Admins can override approvals and rejections, and update approvers. Zluri sends notifications via email (and optionally, Slack). Admins can approve the request directly on Slack or open the app to see more details.",
+        "Submodules": {
+            "Submodule 1": "Sequential Approval Process",
+            "Description": "This submodule manages the sequential approval process for access requests. It allows admins to view, override, and update approvals and rejections. Notifications are sent via email and optionally, Slack. Admins have the option to approve requests directly on Slack or access more details within the app."
+        }
+    },
+    {
+        "module": "Admin Actions",
+        "Description": "Admins can approve or reject requests on behalf of approvers. Rejections at any stage cancel the request, while overrides allow further processing.",
+        "Submodules": {}
+    },
+    {
+        "module": "Add or update approvers",
+        "Description": "Admins can add, remove, replace, or reorder approvers during the process. All stakeholders receive notifications. Admins can also assign a different approver for specific requests.",
+        "Submodules": {}
+    },
+    {
+        "module": "Role-based approvers",
+        "Description": "Assign approvers based on roles set in automation rules.",
+        "Submodules": {}
+    },
+    {
+        "module": "Provisioning and deprovisioning",
+        "Description": "This module involves granting access through provisioning actions and revoking access (optionally) after a set period through deprovisioning actions. Administrators have the ability to track both provisioning and deprovisioning actions in the request overview. Additionally, for time-bound requests that do not have a deprovisioning rule, administrators can configure one for that specific request.",
+        "Submodules": {
+            "Provisioning Actions": "Detailed description of how provisioning actions grant access to users.",
+            "Deprovisioning Actions": "Detailed description of how deprovisioning actions revoke access after a set period, and how administrators can configure deprovisioning rules for time-bound requests."
+        }
+    },
+    {
+        "module": "Changelog",
+        "Description": "The Changelog module tracks request updates such as approval status changes, duration modifications, and admin comments. It provides a historical record of changes made to requests over time.",
+        "Submodules": {
+            "Approval Status Updates": "This submodule specifically focuses on tracking changes in the approval status of requests. It logs when a request is approved, rejected, or pending.",
+            "Duration Changes": "The Duration Changes submodule monitors modifications to the time duration specified for requests. It records when the duration is extended, shortened, or adjusted."
+        }
+    },
+    {
+        "module": "Approver’s dashboard",
+        "Description": "Approvers can view and manage all pending requests from a central dashboard.",
+        "Submodules": {}
+    },
+    {
+        "module": "Access requests via Slack",
+        "Description": "Zluri's Slack bot enables users to raise and approve access requests within Slack. Users can utilize this functionality to streamline access management processes.",
+        "Submodules": {
+            "Request type": "This submodule defines the type of access request that can be initiated through the Slack bot. Users can specify the nature of access they are requesting, such as read-only access, admin privileges, etc.",
+            "Conditions": "Under this submodule, specific conditions or criteria required for access approval are outlined. These conditions may include user roles, project affiliations, or any other relevant factors that determine access eligibility.",
+            "Actions": "The Actions submodule details the steps that can be taken within Slack to process access requests. This may involve approving, denying, or escalating requests to higher authorities for further action.",
+            "Approvers": "In this submodule, the designated individuals or roles responsible for approving access requests are identified. Approvers may vary based on the type of request and organizational hierarchy.",
+            "Provisioning and deprovisioning": "This submodule covers the processes involved in provisioning access to approved requests and deprovisioning access when requests are denied or when access is no longer required. It ensures that access rights are managed efficiently throughout the access lifecycle."
+        }
+    },
+    {
+        "module": "Access Review Roles and Due Dates",
+        "Description": "This module provides functionality related to managing access review roles and due dates.",
+        "Submodules": {
+            "Submodule 1": "Access Review Roles Management",
+            "Submodule 2": "Due Dates Management"
+        }
+    },
+    {
+        "module": "Prerequisites",
+        "Description": "An initial engineering effort is required to connect to Zluri’s SDK. An experienced developer can push this data in approximately 2-3 hours.",
+        "Submodules": {}
+    },
+    {
+        "module": "Access Review Process",
+        "Description": "The Access Review Process module is a functionality that allows users to review and manage access permissions for various resources within the system.",
+        "Submodules": {
+            "Submodule 1": "Access Permission Review: This submodule enables users to view and evaluate the current access permissions assigned to users or groups for specific resources.",
+            "Submodule 2": "Access Permission Management: This submodule provides users with the ability to modify, revoke, or grant access permissions based on the review conducted in Submodule 1."
+        }
+    },
+    {
+        "module": "Additional Functionality",
+        "Description": "The Additional Functionality module provides enhanced features to streamline access review processes. It includes functionalities such as automated notifications, cloning campaigns, tracking reviewer progress, and enabling employees to view and act on certifications assigned to them.",
+        "Submodules": {
+            "Roles": "The Roles submodule allows defining different roles with specific permissions and responsibilities within the access review process.",
+            "Due Dates": "The Due Dates submodule enables setting and managing deadlines for completing access reviews and certifications.",
+            "Creating a Deprovisioning Playbook": "The Creating a Deprovisioning Playbook submodule guides users on creating a structured plan for removing access rights when employees leave the organization.",
+            "Creating a Certification": "The Creating a Certification submodule explains the process of setting up new access review campaigns for evaluating user access rights.",
+            "Reviewing a Certification": "The Reviewing a Certification submodule details the steps involved in assessing and validating access rights during the review process.",
+            "Conclude Review": "The Conclude Review submodule covers the finalization steps after completing the access review process, ensuring all necessary actions are taken.",
+            "Complete Certification": "The Complete Certification submodule describes the finalization process for certifications, marking them as finished and archived for future reference."
+        }
+    },
+    {
+        "module": "Navigating the Integrations module",
+        "Description": "Use the Integrations module to discover and manage integrations. Key features include sorting options to sort integrations by name, status, or activity, and a search bar to search for apps by name.",
+        "Submodules": {
+            "Sorting options": "Allows users to sort integrations by name, status, or activity.",
+            "Search bar": "Enables users to search for apps by name."
+        }
+    },
+    {
+        "module": "Connecting specific integrations",
+        "Description": "This module provides guidance on connecting specific integrations by referring to articles in the Integrations section. It covers detailed steps for connecting integrations, troubleshooting issues, and managing integration workflows.",
+        "Submodules": {
+            "Integration cards": "This submodule likely focuses on providing visual representations or summaries of different integrations, making it easier for users to identify and select the integrations they want to connect.",
+            "Subsections": "This submodule may refer to specific sections within the Integrations area that provide detailed information on individual integrations, including setup instructions, common issues, and best practices for managing integration workflows."
+        }
+    },
+    {
+        "module": "Overview",
+        "Description": "You can use the Overview section to create a new workflow or use an existing playbook. The following categories are available in the Onboarding section of the Workflow module to provide information on current workflows and existing playbooks, user information and activity logs, etc.",
+        "Submodules": {
+            "Onboarding": "Provides information on current workflows and existing playbooks, user information, and activity logs."
+        }
+    },
+    {
+        "module": "Account",
+        "Description": "The Account module in this documentation section focuses on managing user account settings and preferences.",
+        "Submodules": {
+            "Profile Settings": "This submodule allows users to update their personal information such as name, email address, and profile picture.",
+            "Security Settings": "The Security Settings submodule enables users to manage their account security settings like password changes, two-factor authentication, and session management."
+        }
+    },
+    {
+        "module": "Your Organization",
+        "Description": "This module focuses on settings related to managing your organization within the system.",
+        "Submodules": {
+            "Submodule 1": "User Management: Allows administrators to add, remove, and manage user accounts within the organization.",
+            "Submodule 2": "Permissions Management: Enables setting and customizing permissions for different user roles within the organization."
+        }
+    },
+    {
+        "module": "Directory Management",
+        "Description": "Directory Management module provides functionality related to managing directories within the system.",
+        "Submodules": {
+            "Submodule 1": "Directory Creation: This submodule allows users to create new directories within the system.",
+            "Submodule 2": "Directory Permissions: This submodule enables users to set and manage permissions for directories, controlling access to specific directories."
+        }
+    },
+    {
+        "module": "App Catalog",
+        "Description": "The App Catalog module allows users to browse and access a collection of available applications within the system.",
+        "Submodules": {
+            "Submodule 1": "App Search: This submodule enables users to search for specific applications within the catalog based on keywords or filters.",
+            "Submodule 2": "App Details: This submodule provides detailed information about each application listed in the catalog, including descriptions, version numbers, and installation instructions."
+        }
+    },
+    {
+        "module": "Administration",
+        "Description": "The Administration module provides functionalities related to managing settings and configurations within the system.",
+        "Submodules": {
+            "Submodule 1": "Settings Management: This submodule allows users to configure various settings such as user permissions, system preferences, and notification preferences.",
+            "Submodule 2": "Configuration Management: This submodule enables users to manage configurations for different system components, including integrations, data sources, and authentication methods."
+        }
+    },
+    {
+        "module": "SSO",
+        "Description": "The SSO module in this documentation section focuses on configuring and managing Single Sign-On (SSO) methods for users within an organization. It includes setting up SAML/SSO integration with Zluri, verifying trusted domains, and managing user access and permissions.",
+        "Submodules": {
+            "Trusted Domains Verification": "This submodule involves ensuring that all approved domains for organization use are listed and integrated with the SSO system to segregate employees and external users.",
+            "SAML/SSO Configuration": "This submodule covers the configuration of SAML/SSO methods for users, including setting up SSO with Zluri and managing authentication processes."
+        }
+    },
+    {
+        "module": "Custom Fields",
+        "Description": "Custom Fields module allows users to create and manage custom fields within the system.",
+        "Submodules": {
+            "Field Creation": "This submodule enables users to create custom fields with specific data types and properties.",
+            "Field Management": "This submodule provides functionality to edit, delete, and organize custom fields within the system."
+        }
+    },
+    {
+        "module": "Scheduled Exports",
+        "Description": "Scheduled Exports module allows users to automate the exporting of data at specified intervals.",
+        "Submodules": {
+            "Submodule 1": "Export Scheduling: Enables users to set up recurring schedules for data exports.",
+            "Submodule 2": "Export Formats: Provides options for users to choose the format in which the data will be exported."
+        }
+    },
+    {
+        "module": "Custom Apps",
+        "Description": "Custom Apps are applications that users have added themselves or that have been identified via integrations, but are not listed in the platform's database. Users can upgrade their plan by contacting support through chat, mail, or phone. Additionally, users can change notification and email settings, as well as customize workflows globally for their organization.",
+        "Submodules": {
+            "Change Notification and Email Settings": "This submodule allows users to modify their notification preferences and email settings within the Custom Apps.",
+            "Customize Workflows": "This submodule enables users to customize workflows globally for their organization, providing flexibility in defining and managing processes."
+        }
+    },
+    {
+        "module": "Billing",
+        "Description": "The Billing module handles all aspects related to invoicing and payment processing within the system.",
+        "Submodules": {
+            "Invoicing": "Invoicing submodule manages the generation and distribution of invoices to customers based on their usage of services.",
+            "Payment Processing": "Payment Processing submodule deals with the collection and processing of payments from customers for the services rendered."
+        }
+    },
+    {
+        "module": "Notifications",
+        "Description": "Notifications module provides functionality related to sending and receiving notifications to users within the system.",
+        "Submodules": {
+            "Submodule 1": "Email Notifications: Allows users to receive notifications via email.",
+            "Submodule 2": "In-App Notifications: Enables users to receive notifications within the application interface."
+        }
+    },
+    {
+        "module": "Workflow Settings",
+        "Description": "Workflow Settings module allows users to configure and customize the workflow processes within the system.",
+        "Submodules": {
+            "Submodule 1": "Approval Workflow: This submodule enables users to define approval processes for various actions within the system. Users can set up multiple approval levels and assign approvers for each level.",
+            "Submodule 2": "Notification Settings: This submodule allows users to set up notifications for different workflow events. Users can customize the content and recipients of notifications based on specific triggers."
+        }
+    },
+    {
+        "module": "📝 Sign up for a free trial",
+        "Description": "This module allows users to sign up for a free trial by visiting the Sign up page at https://signup.zluri.com/. Users need to register using their company email, provide their name, company name, and phone number, and then click on 'Request Invite'. After this, a representative will contact the user to guide them through the process.",
+        "Submodules": {
+            "Submodule 1": "Register for a free trial using company email",
+            "Submodule 2": "Provide name, company name, and phone number",
+            "Submodule 3": "Click on 'Request Invite'",
+            "Submodule 4": "Guidance from a representative"
+        }
+    },
+    {
+        "module": "🏢 Add organization details",
+        "Description": "This module focuses on adding essential organization details after signing up for Zluri. Users are required to log in with their email and password, and then provide information such as organization name, default currency, and starting month of the financial year. Users may also need to enter an Organization Slug if they have multiple Zluri accounts associated with the same email address. For any issues related to the Organization Slug, users are advised to contact their designated Customer Success Manager. Additionally, to maximize the benefits of Zluri, users are encouraged to connect various integrations for enhanced functionality.",
+        "Submodules": {
+            "Submodule 1": "Entering Organization Information",
+            "Submodule 2": "Managing Integrations"
+        }
+    },
+    {
+        "module": "🚧",
+        "Description": "This module focuses on the onboarding process.",
+        "Submodules": {
+            "Submodule 1": "User Registration: This submodule covers the steps and requirements for users to register on the platform.",
+            "Submodule 2": "Profile Setup: This submodule details the process of setting up user profiles after registration."
+        }
+    },
+    {
+        "module": "🖇️ Connect integrations",
+        "Description": "This module provides functionality to connect integrations for seamless data exchange and communication between different systems.",
+        "Submodules": {
+            "Submodule 1": "Integration Setup: This submodule allows users to configure and set up various integrations with third-party applications or services.",
+            "Submodule 2": "Data Mapping: This submodule enables users to map data fields between connected systems to ensure accurate data transfer and synchronization."
+        }
+    },
+    {
+        "module": "📜 Set primary sources",
+        "Description": "This module focuses on setting up primary sources for authentication and data integration. It includes functionalities related to Single Sign-On (SSO), integration with accounting/finance software, integration with HRMS (Human Resource Management System), and other recommended integrations.",
+        "Submodules": {
+            "SSO (Single Sign-On)": "This submodule allows users to configure and enable Single Sign-On for seamless authentication across different systems and applications.",
+            "Accounting/finance software": "This submodule provides the capability to integrate the system with accounting and finance software for streamlined financial data management and reporting.",
+            "HRMS (Human Resource Management System)": "This submodule enables integration with HRMS platforms to synchronize employee data, streamline HR processes, and ensure data consistency between systems.",
+            "Other recommended integrations": "This submodule suggests additional integrations that complement the primary sources setup, enhancing the overall functionality and interoperability of the system."
+        }
+    },
+    {
+        "module": "🤝 Zluri + Google Workspace",
+        "Description": "Zluri lets you discover which users have Google Workspace accounts, how frequently they use them, third-party apps connected to accounts, and detailed security analysis of every application. It also helps optimize spendings based on this data. You can also create and automate onboarding and offboarding workflows for team members, and automatically assign users to specific groups and/or projects depending on their profile.",
+        "Submodules": {
+            "User Account Discovery": "This submodule allows users to identify which individuals have Google Workspace accounts, their usage patterns, and the third-party applications associated with their accounts.",
+            "Automated Workflows": "This submodule enables the creation and automation of onboarding and offboarding processes for team members. It also facilitates the automatic assignment of users to designated groups or projects based on their profiles."
+        }
+    },
+    {
+        "module": "🖇️ Integration",
+        "Description": "This module focuses on integrating with external systems to enhance functionality.",
+        "Submodules": {
+            "Slack Integration": "This submodule allows users to connect their workspace with Slack for seamless communication and collaboration."
+        }
+    },
+    {
+        "module": "🐞 Troubleshooting",
+        "Description": "The Troubleshooting module provides guidance and steps to resolve issues and errors that may occur while using the system.",
+        "Submodules": {
+            "Submodule 1": "Using a Super Admin Workspace account: This submodule explains how to troubleshoot issues by leveraging the capabilities of a Super Admin Workspace account, which has elevated permissions and access to system settings for troubleshooting purposes.",
+            "Submodule 2": "By creating a Dedicated Custom Admin Account: This submodule details the process of creating a Dedicated Custom Admin Account specifically for troubleshooting purposes, allowing for a more controlled and focused approach to resolving system issues."
+        }
+    },
+    {
+        "module": "🤝 Zluri + Azure AD",
+        "Description": "This module provides integration between Zluri and Azure AD, enabling seamless authentication and user management capabilities.",
+        "Submodules": {
+            "Authentication Integration": "This submodule allows users to authenticate into Zluri using their Azure AD credentials, enhancing security and user experience.",
+            "User Management Sync": "With this submodule, user management tasks such as user provisioning and deprovisioning are synchronized between Zluri and Azure AD, ensuring consistency and efficiency."
+        }
+    },
+    {
+        "module": "🐞 Troubleshooting",
+        "Description": "No description available",
+        "Submodules": {}
+    },
+    {
+        "module": "Capabilities",
+        "Description": "This module provides support for various data points related to transactions and user information. It currently includes transaction status, date, description, amount, and currency, as well as user details like name, email, role, reporting structure, department, and more. Future plans include adding support for contract data.",
+        "Submodules": {
+            "Transaction Information": "This submodule includes data points related to transactions such as status, date, description, amount, and currency.",
+            "User Information": "This submodule encompasses details about users including name, email, role, reporting structure, department, business unit, cost center, licenses, status, last usage, and termination date."
+        }
+    },
+    {
+        "module": "Cost",
+        "Description": "The Cost module in Zluri's SDK does not incur any additional charges for usage. However, there is an API rate limit set at 400 requests per minute. If this limit is exceeded, the API service will be temporarily unavailable for one minute.",
+        "Submodules": {}
+    },
+    {
+        "module": "Error handling and logging",
+        "Description": "The Error handling and logging module in the SDK includes comprehensive error-handling mechanisms for managing and reporting errors during data transmission. It also supports monitoring and logging functionality to track sync information and failures.",
+        "Submodules": {
+            "Error handling mechanisms": "This submodule focuses on the mechanisms implemented in the SDK to manage and report errors that occur during data transmission.",
+            "Logging functionality": "This submodule pertains to the monitoring and logging capabilities provided by the SDK to track sync information and failures for better error analysis and troubleshooting."
+        }
+    },
+    {
+        "module": "How to connect",
+        "Description": "This module provides guidance on how to connect using Zluri’s Integration SDK. It serves as a starting point for users to begin integrating with Zluri's platform.",
+        "Submodules": {
+            "Submodule 1": "How to Use Zluri’s Integration SDK",
+            "Submodule 2": "N/A"
+        }
+    },
+    {
+        "module": "Support",
+        "Description": "This module provides assistance for users who have questions or need help. Users can submit a ticket through the provided link or contact support directly via email.",
+        "Submodules": {
+            "Ticket Submission": "Allows users to submit a ticket for assistance. Users can provide details about their issue or question through the ticket submission form.",
+            "Direct Contact": "Enables users to contact support directly via email at [email protected]"
+        }
+    },
+    {
+        "module": "🤝 Zluri + Slack",
+        "Description": "Integration module between Zluri and Slack.",
+        "Submodules": {
+            "Channel Integration": "Allows syncing of channels between Zluri and Slack for seamless communication.",
+            "User Management": "Enables managing user permissions and access control between Zluri and Slack."
+        }
+    }
+]
