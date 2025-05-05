@@ -5,6 +5,8 @@
 
 Pulse is a powerful tool designed to extract structured information from help documentation websites. It automatically identifies modules, submodules, and generates detailed descriptions by analyzing the content and structure of documentation pages.
 
+![Screenshot 2025-05-05 at 10 09 35 PM](https://github.com/user-attachments/assets/9b6d7128-8550-42b6-a50a-a6ace53f2079)
+
 ## Features
 
 - **Intelligent Web Crawling**: Navigates documentation websites while respecting site structure
